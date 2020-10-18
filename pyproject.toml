@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "hypermodern-python"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Learning hypermodern Python from cjolowicz"
+authors = ["Bruno Rocha <rocha.bruno.alexandre@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/rocha-bruno/hypermodern-python"
+repository = "https://github.com/rocha-bruno/hypermodern-python"
+keywords = ["hypermodern"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 
