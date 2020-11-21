@@ -1,0 +1,30 @@
+rule infer
+  command = /home/bruno/git/public/hypermodern-python/.nox/pytype/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.7 -o $out --no-report-errors --nofail --quick $in
+  description = infer $module
+rule check
+  command = /home/bruno/git/public/hypermodern-python/.nox/pytype/bin/python -m pytype.single --disable import-error --imports_info $imports --module-name $module -V 3.7 -o $out --analyze-annotated --nofail --quick $in
+  description = check $module
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/conftest.pyi: check /home/bruno/git/public/hypermodern-python/tests/conftest.py
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/tests.conftest.imports
+  module = tests.conftest
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/__init__.pyi: check /home/bruno/git/public/hypermodern-python/src/hypermodern_python/__init__.py
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/hypermodern_python.__init__.imports
+  module = hypermodern_python.__init__
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi: check /home/bruno/git/public/hypermodern-python/src/hypermodern_python/wikipedia.py
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/hypermodern_python.wikipedia.imports
+  module = hypermodern_python.wikipedia
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi: check /home/bruno/git/public/hypermodern-python/src/hypermodern_python/console.py | /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/__init__.pyi /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/hypermodern_python.console.imports
+  module = hypermodern_python.console
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_console.pyi: check /home/bruno/git/public/hypermodern-python/tests/test_console.py | /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/tests.test_console.imports
+  module = tests.test_console
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/__init__.pyi: check /home/bruno/git/public/hypermodern-python/tests/__init__.py
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/tests.__init__.imports
+  module = tests.__init__
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/noxfile.pyi: check /home/bruno/git/public/hypermodern-python/noxfile.py
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/noxfile.imports
+  module = noxfile
+build /home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi: check /home/bruno/git/public/hypermodern-python/tests/test_wikipedia.py | /home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi
+  imports = /home/bruno/git/public/hypermodern-python/.pytype/imports/tests.test_wikipedia.imports
+  module = tests.test_wikipedia

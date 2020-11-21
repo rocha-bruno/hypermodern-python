@@ -1,0 +1,19 @@
+# ninja log v5
+0	544	1603647856570000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/__init__.pyi	c19fb2b172cc29b9
+544	2622	1603647858610000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi	5984087cbaac6a57
+2623	3209	1603647859240000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi	10aaec3bc8e10dad
+3209	4485	1603647860460000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi	197c314226bce5ab
+4485	7781	1603647863720000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_console.pyi	5914b08c4d20cac1
+7781	8672	1603647864680000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/conftest.pyi	7edb50d2af670acc
+8672	9441	1603647865460000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/__init__.pyi	8f21e6acadd571c
+9441	11177	1603647867120000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/noxfile.pyi	1f8300ca3c20cb8b
+0	1190	1603647874620000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/noxfile.pyi	1f8300ca3c20cb8b
+0	2080	1603648090950000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi	5984087cbaac6a57
+2080	3182	1603648092070000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi	197c314226bce5ab
+3182	5241	1603648094110000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_console.pyi	5914b08c4d20cac1
+5241	5845	1603648094760000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi	10aaec3bc8e10dad
+0	1887	1603648842560000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi	5984087cbaac6a57
+1887	2896	1603648843590000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi	197c314226bce5ab
+2896	4847	1603648845520000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_console.pyi	5914b08c4d20cac1
+4847	6019	1603648846660000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/noxfile.pyi	1f8300ca3c20cb8b
+6019	6558	1603648847270000000	/home/bruno/git/public/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi	10aaec3bc8e10dad

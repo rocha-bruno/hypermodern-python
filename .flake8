@@ -1,8 +1,10 @@
 # .flake8
 [flake8]
 application-import-names = hypermodern_python,tests
+docstring-convention = google
 ignore = E203,E501,W503
 import-order-style = google
 max-line-length = 80
+max-complexity = 10
 per-file-ignores = tests/*:S101
-select = B,B9,BLK,C,E,F,I,S,W
+select = ANN,B,B9,BLK,C,D,DAR,E,F,I,S,W

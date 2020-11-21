@@ -13,6 +13,8 @@ keywords = ["hypermodern"]
 python = "^3.7"
 click = "^7.1.2"
 requests = "^2.24.0"
+desert = "^2020.1.6"
+marshmallow = "^3.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.1"
@@ -28,6 +30,8 @@ flake8-import-order = "^0.18.1"
 safety = "^1.9.0"
 mypy = "^0.790"
 pytype = {version = "^2020.10.8", python = "3.7"}
+typeguard = "^2.10.0"
+flake8-annotations = "^2.4.1"
 
 [tool.poetry.scripts]
 hypermodern-python = "hypermodern_python.console:main"
